@@ -25,9 +25,9 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".Yandex">
+        <activity android:name=".Yandexmap">
             <intent-filter>
-                <action android:name=".Yandex" />
+                <action android:name=".Yandexmap" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>

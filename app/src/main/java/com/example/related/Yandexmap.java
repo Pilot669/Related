@@ -9,7 +9,7 @@ import com.yandex.mapkit.geometry.Point;
 import com.yandex.mapkit.map.CameraPosition;
 import com.yandex.mapkit.mapview.MapView;
 
-public class Yandex extends Activity {
+public class Yandexmap extends Activity {
 
     private MapView mapView;
 
