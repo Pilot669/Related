@@ -33,13 +33,23 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".Google">
+        <activity android:name=".Googlemap">
             <intent-filter>
-                <action android:name=".Google" />
+                <action android:name=".Googlemap" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".Browser">
+            <intent-filter>
+                <action android:name=".Browser"/>
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
     </application>
 
 </manifest>
