@@ -17,9 +17,10 @@ public class Yandexmap extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        MapKitFactory.setApiKey("ec9c5eca-4299-48f6-9ab1-12aaeeb7cbfd");
+        MapKitFactory.setApiKey("ec9c5eca-4299-48f6-9ab1-12aaeeb7cbfd"); // ключ полученный на сайте Яндекса
         MapKitFactory.initialize(this);
 
+        // место определение точки координат
         setContentView(R.layout.yandex_maps);
         mapView = (MapView)findViewById(R.id.mapView);
         mapView.getMap().move(
@@ -29,7 +30,6 @@ public class Yandexmap extends Activity {
     }
     @Override
     protected void onStop() {
-
         mapView.onStop();
         MapKitFactory.getInstance().onStop();
         super.onStop();
@@ -37,7 +37,6 @@ public class Yandexmap extends Activity {
 
     @Override
     protected void onStart() {
-
         super.onStart();
         MapKitFactory.getInstance().onStart();
         mapView.onStart();

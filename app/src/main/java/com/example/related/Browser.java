@@ -29,6 +29,7 @@ public class Browser extends Activity {
         wv.loadUrl("http://www.google.com");
         wv.setWebViewClient(new WebViewClient());
     }
+    // пишем кнопку возврата
     @Override
     public  void onBackPressed(){
         if (wv.canGoBack()){

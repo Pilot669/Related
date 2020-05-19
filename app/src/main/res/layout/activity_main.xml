@@ -5,48 +5,104 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ваши координаты"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="614dp" />
-
     <Button
         android:id="@+id/btn1"
         android:layout_width="wrap_content"
         android:layout_height="45dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginLeft="48dp"
-        android:layout_marginBottom="192dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
         android:text="Yandex Map"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btn2"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="362dp" />
 
     <Button
         android:id="@+id/btn2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="48dp"
-        android:layout_marginRight="48dp"
-        android:layout_marginBottom="192dp"
         android:text="Google Map"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        tools:layout_editor_absoluteX="298dp"
+        tools:layout_editor_absoluteY="362dp" />
 
     <Button
         android:id="@+id/btn3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="384dp"
         android:text="Browser"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteY="434dp" />
+
+    <TextView
+        android:id="@+id/textGPS1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GPS"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="507dp" />
+
+    <TextView
+        android:id="@+id/textGPS2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="tvEnabledGPS"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="526dp" />
+
+    <TextView
+        android:id="@+id/textGPS3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="tvStatusGPS"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="545dp" />
+
+    <TextView
+        android:id="@+id/textGPS4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="tvLocationGPS"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="564dp" />
+
+    <TextView
+        android:id="@+id/textNET1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Network"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="583dp" />
+
+    <TextView
+        android:id="@+id/textNET2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="tvEnabledNet"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="602dp" />
+
+    <TextView
+        android:id="@+id/textNET3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="tvStatusNet"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="621dp" />
+
+    <TextView
+        android:id="@+id/textNET4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="tvLocationNet"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="640dp" />
+
+    <Button
+        android:id="@+id/btnSET"
+        android:layout_width="152dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="16dp"
+        android:text="Location settings"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

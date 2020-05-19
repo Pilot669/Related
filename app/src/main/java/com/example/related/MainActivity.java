@@ -26,6 +26,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     }
 
     @Override
+    // кнопка перехода Яндекс карту
     public void onClick (View v){
        switch (v.getId()) {
            case R.id.btn1:
@@ -35,7 +36,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
                     default:
                 break;
             }
-
+        // кнопка перехода Гугл карту
        switch (v.getId()) {
            case R.id.btn2:
                 Intent intent = new Intent(this, Googlemap.class);
@@ -44,7 +45,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
                     default:
                 break;
             }
-
+        // кнопка перехода в Браузер
        switch (v.getId()) {
             case R.id.btn3:
                 Intent intent = new Intent(this, Browser.class);
@@ -54,5 +55,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 break;
         }
     }
+
+
 }
 
